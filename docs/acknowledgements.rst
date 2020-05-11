@@ -1,2 +1,2 @@
-Installing Ludii
+Acknowledgements
 ================
