@@ -9,15 +9,6 @@ Welcome to Ludii's Tutorials!
    installing_this_repo
    ludii_terminology
    
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Programming with Ludii
-   
-   loading_games
-   running_trials
-   inspecting_trials_and_states
-   
    
 .. toctree::
    :maxdepth: 2
@@ -27,6 +18,15 @@ Welcome to Ludii's Tutorials!
    tutorial_tic_tac_toe
    lud_format_advanced_features
    tutorial_amazons
+   
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Programming with Ludii
+   
+   loading_games
+   running_trials
+   inspecting_trials_and_states
   
    
 .. toctree::
