@@ -1,2 +1,2 @@
-Tutorial -- Writing Amazons in .lud Format
-==========================================
+Writing Amazons in .lud Format
+==============================
