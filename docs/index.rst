@@ -2,10 +2,8 @@ Welcome to Ludii's Tutorials!
 =============================
 
 Ludii is a general game system designed to play, evaluate and design a wide range of games, including board games, card games, dice games, mathematical games, 
-and so on. Download the Ludii player to explore our ever-growing database of games, test your AI search algorithms, and design your own games.
-
-Games are described as structured sets of ludemes (units of game-related information). This allows the full range of traditional strategy games from around the world 
-to be modelled in a single playable database. Ludii is being developed as part of the ERC-funded `Digital Ludeme Project <http://www.ludeme.eu/>`_.
+and so on. These pages provide tutorials for designing games in Ludii, and various programmatic use cases of Ludii (implementing, testing and evaluating
+Artificial Intelligence in Ludii, running games for game evaluation or other purposes, etc.).
 
 .. toctree::
    :maxdepth: 2
@@ -50,3 +48,17 @@ to be modelled in a single playable database. Ludii is being developed as part o
    
    contact_info
    acknowledgements
+   
+   
+Citing Ludii
+------------
+
+The following ``.bib`` entry may be used for citing the use of Ludii in papers::
+
+    @inproceedings{Piette2020Ludii,
+      Author = {{\'E}. Piette and D. J. N. J. Soemers and M. Stephenson and C. F. Sironi and M. H. M. Winands and C. Browne},
+      Title = {Ludii - The Ludemic General Game System},
+      Year = {2020},
+      booktitle = {Proceedings of the 2020 European Conference on Artificial Intelligence},
+      note = {To appear.}
+    }
