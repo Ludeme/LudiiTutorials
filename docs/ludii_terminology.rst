@@ -12,4 +12,19 @@ Trial
    A ``Trial`` in Ludii corresponds to a record of a game played at a particular 
    time (i.e., where a ``Game`` object would be "the game of *Chess*", a ``Trial`` 
    object would be "a game of *Chess* as played by these persons at this time".
-   Trials in Ludii store the full history of moves applied throughout the trial.
+   Trials in Ludii store the full history of moves applied throughout the trial,
+   as well as the current game state.
+State
+   A ``State`` stores all the relevant properties of a game state (minus the
+   history of moves, which is contained in the Trial as described above).
+Action
+   ``Action`` objects in Ludii are atomic objects that, when applied to a game
+   state, modify a single property of it. Note that these do **not** correspond
+   directly to the decisions that players can make during gameplay. Users of 
+   Ludii will generally not need to interact with these low-level objects directly.
+Move
+   ``Move`` objects are wrappers around one or more ``Action`` objects. Sometimes
+   they may even contain references to additional rules that should be executed
+   to compute additional Actions to apply after the Actions that it directly
+   contains have been applied to a game state. Moves correspond to the decisions
+   that players can actually directly make when playing.
