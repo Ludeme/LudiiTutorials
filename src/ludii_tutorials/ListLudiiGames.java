@@ -1,5 +1,7 @@
 package ludii_tutorials;
 
+import main.FileHandling;
+
 /**
  * Example class which lists built-in Ludii games (optionally only ones
  * that satisfy certain criteria).
@@ -15,7 +17,7 @@ public class ListLudiiGames
 	 */
 	public static void main(final String[] args)
 	{
-		// TODO
+		final String[] allGameNames = FileHandling.listGames();		// TODO allow filtering and printing
 	}
 
 }

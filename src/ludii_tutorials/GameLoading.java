@@ -21,6 +21,7 @@ public class GameLoading
 		final Game ticTacToe = GameLoader.loadGameFromName("Tic-Tac-Toe.lud");
 		System.out.println("Loaded game: " + ticTacToe.name());
 		
+		// This will load Chess:
 		final Game chess = GameLoader.loadGameFromName("/Chess.lud");
 		System.out.println("Loaded game: " + chess.name());
 	}
