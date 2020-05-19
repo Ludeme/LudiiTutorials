@@ -5,6 +5,9 @@ Writing .lud Descriptions -- Basics
    The current version of Ludii is a beta release. It is expected that some aspects of
    the game description language will still change in ways that break backwards compatibility,
    at least up until version 1.0.0.
+   
+The .lud Format
+---------------
 
 Game descriptions for Ludii are written in text files with a ``.lud`` extension. 
 The language used to describe games for Ludii is defined by a `class grammar approach <https://link.springer.com/chapter/10.1007/978-3-319-50935-8_16>`_; 
@@ -55,3 +58,13 @@ As a first example, the following code shows the full game description for *Tic-
            (end (if (is Line 3) (result Mover Win)))
        )
    )
+   
+Viewing Ludii's Built-in Game Files
+-----------------------------------
+
+The ``Ludii.jar`` file is not only a runnable program, but also an archive
+containing files. It can be extracted or opened like any regular ``.zip`` archive,
+which allows for the individual files inside it to be inspected. One of the
+top-level directories inside it is the ``/lud/`` directory. Under this directory,
+all of the ``.lud`` files for all the built-in Ludii games can be found. They
+may all serve as examples for game designers.
