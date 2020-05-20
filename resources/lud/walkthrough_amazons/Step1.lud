@@ -1,3 +1,6 @@
 // Step 1 in the tutorial for writing Amazons in .lud format from scratch
+//
+// This file is actually just loaded as Tic-Tac-Toe, except that it will
+// be named "Amazons".
 
 (game "Amazons")
