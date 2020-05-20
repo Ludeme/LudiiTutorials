@@ -81,8 +81,8 @@ In this step, we add the pieces to the equipment.
        )  
    )
    
- Line 6 defines that each player should have a piece type labelled "Queen". 
- Ludii will automatically label these as ``"Queen1"`` and ``"Queen2"`` for 
- players 1 and 2, respectively. Additionally, in line 7 we define a "Dot" piece 
- type, which is not owned by any player. This is the piece type that we will use 
- in locations that players block by shooting their arrows.
+Line 6 defines that each player should have a piece type labelled "Queen". 
+Ludii will automatically label these as ``"Queen1"`` and ``"Queen2"`` for 
+players 1 and 2, respectively. Additionally, in line 7 we define a "Dot" piece 
+type, which is not owned by any player. This is the piece type that we will use 
+in locations that players block by shooting their arrows.
