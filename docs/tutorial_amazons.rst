@@ -86,3 +86,45 @@ Ludii will automatically label these as ``"Queen1"`` and ``"Queen2"`` for
 players 1 and 2, respectively. Additionally, in line 7 we define a "Dot" piece 
 type, which is not owned by any player. This is the piece type that we will use 
 in locations that players block by shooting their arrows.
+
+Step 4: Defining the Playing and Ending rules
+---------------------------------------------
+
+In this step, we add the minimum rules (other than the default, implicit 
+*Tic-Tac-Toe* rules) that result in a legal game description that may be loaded 
+in Ludii:
+
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 10-21
+   
+   (game "Amazons"  
+       (players 2)  
+       (equipment 
+           { 
+               (board (square 10))   
+               (piece "Queen" Each)
+               (piece "Dot" Neutral)
+           }
+       )
+       (rules 
+           (play 
+               (forEach Piece)
+           )
+           
+           (end 
+               (if 
+                   (no Moves Next)  
+                   (result Mover Win) 
+               ) 
+           ) 
+       )
+   )
+   
+Line 10 is used to define the rules of the game; the minimum rules to compile 
+are the playing and the ending rules. Lines 11-13 describe the playing rules by 
+using one of the simplest ``play`` rules available in Ludii; ``(forEach Piece)``, 
+which simply defines that Ludii should loop through all pieces owned by a player, 
+and extract legal moves from the piece types to generate the list of legal moves 
+for a mover. Finally, lines 15-20 describe the ending rules. Here we want the 
+player who last made a move to win the game whenever the next player has no move.
