@@ -231,3 +231,58 @@ the moves are defined by ``(shoot "Dot0")``. This rule lets us shoot a piece of
 type ``"Dot0"`` into any empty position, starting from the location that we 
 last moved to -- this is the location that our last queen move ended up in. 
 This game description implements the full game of *Amazons* for Ludii.
+
+Step 7: Improving Graphics
+--------------------------
+
+The game description above plays correctly, but does not look appealing because 
+it uses Ludii's default colours for the board. This can be easily improved by 
+adding graphics metadata:
+
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 34-41
+   
+   (game "Amazons"  
+       (players 2)  
+       (equipment 
+           { 
+               (board (square 10)) 
+               (piece "Queen" Each (slide (then (moveAgain))))
+               (piece "Dot" Neutral)
+           }
+       )  
+       (rules 
+           (start 
+               { 
+                   (place "Queen1" {"A4" "D1" "G1" "J4"})
+                   (place "Queen2" {"A7" "D10" "G10" "J7"})
+               }
+           )
+           
+           (play 
+               (if (is Even (count Moves))
+                   (forEach Piece)
+                   (shoot "Dot0")
+               )
+           )
+           
+           (end 
+              (if 
+                (no Moves Next)  
+                (result Mover Win) 
+              ) 
+           )  
+       )
+   )
+   
+   (metadata 
+       (graphics 
+           {
+               (pieceScale "Dot" 0.333)
+               (boardStyle ChessStyle)
+           }
+       )
+   )
+   
+Line 37 makes the "Dot" pieces smaller, and line 38 applies a Chess style to the board.
