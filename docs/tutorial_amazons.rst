@@ -128,3 +128,106 @@ which simply defines that Ludii should loop through all pieces owned by a player
 and extract legal moves from the piece types to generate the list of legal moves 
 for a mover. Finally, lines 15-20 describe the ending rules. Here we want the 
 player who last made a move to win the game whenever the next player has no move.
+
+Step 5: Defining the Starting Rules
+-----------------------------------
+
+We extend the game description listed above by adding ``start`` rules to place 
+the pieces on the board:
+
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 11-16
+   
+   (game "Amazons"  
+       (players 2)  
+       (equipment 
+           { 
+               (board (square 10))   
+               (piece "Queen" Each)
+               (piece "Dot" Neutral)
+           }
+       )
+       (rules
+           (start 
+               { 
+                   (place "Queen1" {"A4" "D1" "G1" "J4"})
+                   (place "Queen2" {"A7" "D10" "G10" "J7"})
+               }
+           )
+           (play 
+               (forEach Piece)
+           )
+           
+           (end 
+               (if 
+                   (no Moves Next)  
+                   (result Mover Win) 
+               ) 
+           ) 
+       )
+   )
+   
+Lines 11--16 ensure that any game is started by placing objects of the two 
+different types of queens in the correct starting locations. The labels used to 
+specify these locations can be seen in Ludii by enabling "Show Coordinates" in 
+Ludii's *View* menu.
+
+Step 6: Adding the Final Rules for *Amazons*
+--------------------------------------------
+
+To complete the game of *Amazons*, we need to allow players to move their queens 
+and to shoot an arrow after moving a queen. This is implemented in the following 
+game description:
+
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 6,18-21
+   
+   (game "Amazons"  
+       (players 2)  
+       (equipment 
+           { 
+               (board (square 10))   
+               (piece "Queen" Each (slide (then (moveAgain))))
+               (piece "Dot" Neutral)
+           }
+       )
+       (rules
+           (start 
+               { 
+                   (place "Queen1" {"A4" "D1" "G1" "J4"})
+                   (place "Queen2" {"A7" "D10" "G10" "J7"})
+               }
+           )
+           (play 
+               (if (is Even (count Moves))
+                   (forEach Piece)
+                   (shoot "Dot0")
+               )
+           )
+           
+           (end 
+               (if 
+                   (no Moves Next)  
+                   (result Mover Win) 
+               ) 
+           ) 
+       )
+   )
+   
+To make the queens able to move, inside the queen pieces, we have added the 
+following: ``(slide (then (moveAgain))))``. By default, the ``(slide)`` ludeme 
+defines that the piece is permitted to slide along any axis of the used board, 
+as long as we keep moving through locations that are empty. No additional 
+restrictions -- in terms of direction or distance, for example -- are required 
+for queen moves. We have appended ``(then (moveAgain))`` in the queen moves. 
+This means that, after any queen move, the same player gets to make another move. 
+
+In lines 18-21, the ``play`` rules have been changed to no longer exclusively 
+extract their moves from the pieces. Only at even move counts (0, 2, 4, etc.) 
+do we still make a queen move (using ``(forEach Piece)``. At odd move counts, 
+the moves are defined by ``(shoot "Dot0")``. This rule lets us shoot a piece of 
+type ``"Dot0"`` into any empty position, starting from the location that we 
+last moved to -- this is the location that our last queen move ended up in. 
+This game description implements the full game of *Amazons* for Ludii.
