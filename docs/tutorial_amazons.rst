@@ -1,3 +1,5 @@
+.. _walkthrough-amazons:
+
 Writing Amazons in .lud Format
 ==============================
 
