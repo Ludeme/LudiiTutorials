@@ -1,3 +1,5 @@
+.. _loading_games_tutorial:
+
 Programmatically Loading Games
 ==============================
 
