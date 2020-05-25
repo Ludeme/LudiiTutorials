@@ -19,8 +19,9 @@ Artificial Intelligence in Ludii, running games for game evaluation or other pur
    
    lud_format_basics
    tutorial_amazons
-   lud_format_advanced_features
-   tutorial_advanced
+   
+.. lud_format_advanced_features
+.. tutorial_advanced
    
    
 .. toctree::
@@ -30,7 +31,8 @@ Artificial Intelligence in Ludii, running games for game evaluation or other pur
    ludii_terminology
    loading_games
    running_trials
-   inspecting_trials_and_states
+   
+.. inspecting_trials_and_states
   
    
 .. toctree::
@@ -38,8 +40,9 @@ Artificial Intelligence in Ludii, running games for game evaluation or other pur
    :caption: Implementing AIs for Ludii
    
    basic_ai_api
-   ai_tips_and_tricks
-   ai_visualisations
+   
+.. ai_tips_and_tricks
+.. ai_visualisations
    
 
 .. toctree::

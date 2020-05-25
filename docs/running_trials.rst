@@ -1,3 +1,5 @@
+.. _running_trials:
+
 Running Trials
 ==============
 
