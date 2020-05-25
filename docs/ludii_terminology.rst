@@ -1,3 +1,5 @@
+.. _ludii_programming_terminology:
+
 Ludii Programming Terminology
 =============================
 
