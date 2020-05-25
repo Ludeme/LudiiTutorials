@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import game.Game;
-import player.utils.loading.GameLoader;
 import util.AI;
 import util.Context;
+import util.GameLoader;
 import util.Trial;
 import util.model.Model;
 import utils.RandomAI;
