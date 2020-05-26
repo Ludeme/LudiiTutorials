@@ -6,7 +6,7 @@ Programmatically Loading Games
 Loading a Game by Name
 ----------------------
 
-Ludii's ``util.GameLoader`` class provides static helper methods that
+Ludii's ``player.utils.loading.GameLoader`` class provides static helper methods that
 may be used to programmatically load games. The simplest such method only takes
 a single argument; a ``String`` representing the name of a game. This argument
 should always include a ``.lud`` extension, and at least the filename of

@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import game.Game;
-import main.CommandLineArgParse;
-import main.CommandLineArgParse.ArgOption;
-import main.CommandLineArgParse.OptionTypes;
+import main.ArgParse;
+import main.ArgParse.ArgOption;
+import main.ArgParse.OptionTypes;
 import main.FileHandling;
-import util.GameLoader;
+import player.utils.loading.GameLoader;
 
 /**
  * Example class which lists built-in Ludii games (optionally only ones
@@ -34,8 +34,8 @@ public class ListLudiiGames
 	public static void main(final String[] args)
 	{
 		// Define our command-line options
-		final CommandLineArgParse argParse = 
-				new CommandLineArgParse
+		final ArgParse argParse = 
+				new ArgParse
 				(
 					true,
 					"Provides a list of all built-in Ludii games -- optionally only"
