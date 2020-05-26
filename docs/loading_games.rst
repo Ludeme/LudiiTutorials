@@ -109,5 +109,5 @@ only have ``121`` sites.
 
    This tutorial uses example code from the following source files:
 
-   *  :download:`GameLoading.java <../src/ludii_tutorials/GameLoading.java>`.
-   *  :download:`ListLudiiGames.java <../src/ludii_tutorials/ListLudiiGames.java>`.
+   *  `GameLoading.java <https://github.com/Ludeme/LudiiTutorials/blob/master/src/ludii\_tutorials/GameLoading.java>`_.
+   *  `ListLudiiGames.java <https://github.com/Ludeme/LudiiTutorials/blob/master/src/ludii\_tutorials/ListLudiiGames.java>`_.

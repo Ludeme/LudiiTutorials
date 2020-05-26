@@ -11,7 +11,7 @@ programmatic user of Ludii.
 
    This tutorial uses example code from the following source file:
 
-   *  :download:`GameLoading.java <../src/ludii_tutorials/RunningTrials.java>`.
+   *  `RunningTrials.java <https://github.com/Ludeme/LudiiTutorials/blob/master/src/ludii_tutorials/RunningTrials.java>`_.
 
 In this tutorial, we'll run trials for the game of *Hex*. So, let's load that
 game first, based on the tutorial on :ref:`loading_games_tutorial`. We only
