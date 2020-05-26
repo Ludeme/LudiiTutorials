@@ -2,6 +2,11 @@
 
 # Welcome to Ludii's Tutorials!
 
+[![Documentation Status](https://readthedocs.org/projects/ludiitutorials/badge/?version=latest)](https://ludiitutorials.readthedocs.io/en/latest/?badge=latest)
+[![license](https://img.shields.io/github/license/Ludeme/LudiiTutorials)](LICENSE)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+[![twitter](https://img.shields.io/twitter/follow/ludiigames?style=social)](https://twitter.com/intent/follow?screen_name=ludiigames)
+
 Ludii is a general game system designed to play, evaluate and design a wide range of games, including board games, card games, dice games, mathematical games, 
 and so on. This repository contains example code and tutorials for designing games in Ludii, and various programmatic use cases of Ludii (implementing, testing and evaluating Artificial Intelligence in Ludii, running games for game evaluation or other purposes, etc.).
 
