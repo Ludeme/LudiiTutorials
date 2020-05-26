@@ -7,7 +7,7 @@ and so on. This repository contains example code and tutorials for designing gam
 
 ## Tutorials
 
-All of the tutorials may be viewed on: TO DO need to add link once built on readthedocs.
+All of the tutorials may be viewed on [ReadTheDocs](https://ludiitutorials.readthedocs.io/).
 
 ## Other Useful Links
 
