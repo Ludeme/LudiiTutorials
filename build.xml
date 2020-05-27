@@ -8,10 +8,10 @@
 	
 	<path id="LudiiTutorials.classpath">
 	  	<pathelement location="bin"/>
-	    <pathelement location="lib/Ludii.jar"/>
-		<pathelement location="lib/junit-4.12.jar"/>
-	 	<pathelement location="lib/hamcrest-all-1.3.jar"/>
-	  	<pathelement location="lib/activation-1.1.1.jar"/>
+	    <pathelement location="libs/Ludii.jar"/>
+		<pathelement location="libs/junit-4.12.jar"/>
+	 	<pathelement location="libs/hamcrest-all-1.3.jar"/>
+	  	<pathelement location="libs/activation-1.1.1.jar"/>
 	</path>
 	
 	<target name="init">
