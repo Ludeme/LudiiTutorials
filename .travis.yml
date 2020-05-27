@@ -1,0 +1,17 @@
+language: java
+version: ~> 1.0
+
+branches:
+  only:
+  - master
+  - setup-travis-ci
+  
+before_script:
+  - sudo apt-get install ant-optional
+  - sudo chown -R travis ./travis/test_old_trials.sh
+  - sudo chmod +x ./travis/test_old_trials.sh
+  
+script:
+  - cd Player
+  - travis_wait ant clean test
+  - ../travis/test_old_trials.sh

@@ -1,4 +1,4 @@
-package game_loading;
+package running_trials;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
