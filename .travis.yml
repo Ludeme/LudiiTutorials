@@ -8,6 +8,9 @@ branches:
   
 before_script:
   - sudo apt-get install ant-optional
+  - sudo chown -R travis ./travis/download_ludii.sh
+  - sudo chmod +x ./travis/download_ludii.sh
   
 script:
+  - ../travis/download_ludii.sh
   - travis_wait ant clean test
