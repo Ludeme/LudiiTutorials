@@ -12,5 +12,5 @@ before_script:
   - sudo chmod +x ./travis/download_ludii.sh
   
 script:
-  - ../travis/download_ludii.sh
+  - ./travis/download_ludii.sh
   - travis_wait ant clean test
