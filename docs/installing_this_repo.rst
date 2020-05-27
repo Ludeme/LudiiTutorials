@@ -15,3 +15,8 @@ these pages. This page lists the steps required to run these code examples local
    in it.
 4. Set up the project in your IDE to use the ``Ludii.jar`` file as a library.
    Most of the code requires this as a dependency.
+
+.. note::
+
+   This repository also contains some unit tests, which additionally require
+   JUnit to be set up as a dependency of the project before they can compile.
