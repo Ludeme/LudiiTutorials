@@ -10,6 +10,7 @@ import java.util.List;
 import org.junit.Test;
 
 import game.Game;
+import main.FileHandling;
 import player.utils.loading.GameLoader;
 
 /**
@@ -26,6 +27,11 @@ public class TestGameLoading
 	{
 		// The following built-in games are loaded by the Game Loading tutorial; test
 		// that they all successfully compile and have the expected name
+		for (final String s : FileHandling.listGames())
+		{
+			System.out.println("s = " + s);
+		}
+		
 		final Game ticTacToe = GameLoader.loadGameFromName("Tic-Tac-Toe.lud");
 		assertNotNull(ticTacToe);
 		assertEquals(ticTacToe.name(), "Tic-Tac-Toe");
