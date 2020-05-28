@@ -15,3 +15,6 @@ these pages. This page lists the steps required to run these code examples local
    in it.
 4. Set up the project in your IDE to use the ``Ludii.jar`` file as a library.
    Most of the code requires this as a dependency.
+5. Also set the project to use the other two ``.jar`` files that are already
+   included in ``<install_dir>/LudiiTutorials/libs`` as libraries; these are
+   only required for the unit tests in this repository.

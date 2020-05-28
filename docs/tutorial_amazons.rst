@@ -20,7 +20,7 @@ from that place. The last player able to make a move wins.
 
 .. note::
 
-   For each of the following steps, the `Ludii Tutorials GitHub repository <https://github.com/Ludeme/LudiiTutorials/tree/master/resources/lud/walkthrough_amazons>`_
+   For each of the following steps, the `Ludii Tutorials GitHub repository <https://github.com/Ludeme/LudiiTutorials/tree/master/resources/luds/walkthrough_amazons>`_
    contains a ``.lud`` file with the contents written in that step. They can all
    be loaded in Ludii and "played", although some of them may not be particularly
    interesting to play!

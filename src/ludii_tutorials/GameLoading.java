@@ -31,7 +31,7 @@ public class GameLoading
 		
 		// This will load the external (not built-in) version of Amazons
 		// that we wrote in the tutorial for writing Amazons in .lud format:
-		final Game ourOwnAmazons = GameLoader.loadGameFromFile(new File("resources/lud/walkthrough_amazons/Step7.lud"));
+		final Game ourOwnAmazons = GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step7.lud"));
 		System.out.println("Loaded game: " + ourOwnAmazons.name());
 		
 		// This will load Hex on a 19x19 board, with Misere end rule:
