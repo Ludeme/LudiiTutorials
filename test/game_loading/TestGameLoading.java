@@ -10,7 +10,6 @@ import java.util.List;
 import org.junit.Test;
 
 import game.Game;
-import main.FileHandling;
 import player.utils.loading.GameLoader;
 
 /**
@@ -27,11 +26,6 @@ public class TestGameLoading
 	{
 		// The following built-in games are loaded by the Game Loading tutorial; test
 		// that they all successfully compile and have the expected name
-		for (final String s : FileHandling.listGames())
-		{
-			System.out.println("s = " + s);
-		}
-		
 		final Game ticTacToe = GameLoader.loadGameFromName("Tic-Tac-Toe.lud");
 		assertNotNull(ticTacToe);
 		assertEquals(ticTacToe.name(), "Tic-Tac-Toe");
@@ -54,13 +48,13 @@ public class TestGameLoading
 	{
 		// Test that all of the .lud files for the separate steps of the tutorial
 		// to implement Amazons in .lud format from scratch compile correctly
-		assertNotNull(GameLoader.loadGameFromFile(new File("resources/lud/walkthrough_amazons/Step1.lud")));
-		assertNotNull(GameLoader.loadGameFromFile(new File("resources/lud/walkthrough_amazons/Step2.lud")));
-		assertNotNull(GameLoader.loadGameFromFile(new File("resources/lud/walkthrough_amazons/Step3.lud")));
-		assertNotNull(GameLoader.loadGameFromFile(new File("resources/lud/walkthrough_amazons/Step4.lud")));
-		assertNotNull(GameLoader.loadGameFromFile(new File("resources/lud/walkthrough_amazons/Step5.lud")));
-		assertNotNull(GameLoader.loadGameFromFile(new File("resources/lud/walkthrough_amazons/Step6.lud")));
-		assertNotNull(GameLoader.loadGameFromFile(new File("resources/lud/walkthrough_amazons/Step7.lud")));
+		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step1.lud")));
+		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step2.lud")));
+		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step3.lud")));
+		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step4.lud")));
+		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step5.lud")));
+		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step6.lud")));
+		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step7.lud")));
 	}
 
 }

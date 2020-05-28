@@ -70,7 +70,7 @@ following code:
 
 .. code-block:: java
 
-   final Game ourOwnAmazons = GameLoader.loadGameFromFile(new File("resources/lud/walkthrough_amazons/Step7.lud"));
+   final Game ourOwnAmazons = GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step7.lud"));
    
 Loading Games with Options
 --------------------------
