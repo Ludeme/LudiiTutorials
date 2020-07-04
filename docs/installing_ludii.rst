@@ -17,7 +17,7 @@ Download and Installation
 -------------------------
 
 The latest version of Ludii may always be downloaded from
-`Ludii's downloads page <https://ludii.games/downloads.php>`_. This page also
+`Ludii's downloads page <https://ludii.games/download.php>`_. This page also
 contains an archive of older versions of Ludii, and various extra downloads
 (such as documentation).
 

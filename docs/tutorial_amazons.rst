@@ -191,7 +191,7 @@ game description:
        (equipment 
            { 
                (board (square 10))   
-               (piece "Queen" Each (slide (then (moveAgain))))
+               (piece "Queen" Each (move Slide (then (moveAgain))))
                (piece "Dot" Neutral)
            }
        )
@@ -205,7 +205,7 @@ game description:
            (play 
                (if (is Even (count Moves))
                    (forEach Piece)
-                   (shoot "Dot0")
+                   (move Shoot (what "Dot0"))
                )
            )
            
@@ -219,8 +219,8 @@ game description:
    )
    
 To make the queens able to move, inside the queen pieces, we have added the 
-following: ``(slide (then (moveAgain))))``. By default, the ``(slide)`` ludeme 
-defines that the piece is permitted to slide along any axis of the used board, 
+following: ``(move Slide (then (moveAgain))))``. By default, the ``(move Slide)`` 
+ludeme defines that the piece is permitted to slide along any axis of the used board, 
 as long as we keep moving through locations that are empty. No additional 
 restrictions -- in terms of direction or distance, for example -- are required 
 for queen moves. We have appended ``(then (moveAgain))`` in the queen moves. 
@@ -229,10 +229,11 @@ This means that, after any queen move, the same player gets to make another move
 In lines 18-21, the ``play`` rules have been changed to no longer exclusively 
 extract their moves from the pieces. Only at even move counts (0, 2, 4, etc.) 
 do we still make a queen move (using ``(forEach Piece)``. At odd move counts, 
-the moves are defined by ``(shoot "Dot0")``. This rule lets us shoot a piece of 
-type ``"Dot0"`` into any empty position, starting from the location that we 
-last moved to -- this is the location that our last queen move ended up in. 
-This game description implements the full game of *Amazons* for Ludii.
+the moves are defined by ``(move Shoot (what "Dot0"))``. This rule lets us 
+shoot a piece of type ``"Dot0"`` into any empty position, starting from the 
+location that we last moved to -- this is the location that our last queen move 
+ended up in. This game description implements the full game of *Amazons* for 
+Ludii.
 
 Step 7: Improving Graphics
 --------------------------
@@ -249,12 +250,12 @@ adding graphics metadata:
        (players 2)  
        (equipment 
            { 
-               (board (square 10)) 
-               (piece "Queen" Each (slide (then (moveAgain))))
+               (board (square 10))   
+               (piece "Queen" Each (move Slide (then (moveAgain))))
                (piece "Dot" Neutral)
            }
-       )  
-       (rules 
+       )
+       (rules
            (start 
                { 
                    (place "Queen1" {"A4" "D1" "G1" "J4"})
@@ -265,24 +266,24 @@ adding graphics metadata:
            (play 
                (if (is Even (count Moves))
                    (forEach Piece)
-                   (shoot "Dot0")
+                   (move Shoot (what "Dot0"))
                )
            )
            
            (end 
-              (if 
-                (no Moves Next)  
-                (result Mover Win) 
-              ) 
-           )  
+               (if 
+                   (no Moves Next)  
+                   (result Mover Win) 
+               ) 
+           ) 
        )
    )
    
    (metadata 
        (graphics 
            {
-               (pieceScale "Dot" 0.333)
-               (boardStyle ChessStyle)
+               (piece Scale "Dot" 0.333)
+               (board Style Chess)
            }
        )
    )

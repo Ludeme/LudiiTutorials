@@ -9,9 +9,9 @@ import java.util.List;
 import org.junit.Test;
 
 import game.Game;
-import player.utils.loading.GameLoader;
 import util.AI;
 import util.Context;
+import util.GameLoader;
 import util.Trial;
 import util.model.Model;
 import utils.RandomAI;
@@ -57,7 +57,7 @@ public class TestRunningTrials
 			model.startNewStep(context, ais, 1.0);
 		}
 
-		final double[] ranking = trial.state().ranking();
+		final double[] ranking = trial.ranking();
 		assertNotNull(ranking);
 		
 		// Hex cannot have ties; must always have one player
