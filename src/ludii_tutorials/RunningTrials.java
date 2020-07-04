@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import game.Game;
-import player.utils.loading.GameLoader;
 import util.AI;
 import util.Context;
+import util.GameLoader;
 import util.Trial;
 import util.model.Model;
 import utils.RandomAI;
@@ -78,7 +78,7 @@ public class RunningTrials
 			
 			// When we reach this code, we know that the trial is over and we can see what ranks the
 			// different players achieved
-			final double[] ranking = trial.state().ranking();
+			final double[] ranking = trial.ranking();
 			
 			for (int p = 1; p <= game.players().count(); ++p)
 			{
@@ -91,7 +91,7 @@ public class RunningTrials
 				// who controlled the p'th "colour" at the end of a trial, and
 				// trial.state().playerToAgent(p) tells you which agent (in the list
 				// of AI objects) controls that colour at the end of the trial.
-				System.out.println("Agent " + trial.state().playerToAgent(p) + " achieved rank: " + ranking[p]);
+				System.out.println("Agent " + context.state().playerToAgent(p) + " achieved rank: " + ranking[p]);
 			}
 			System.out.println();
 		}

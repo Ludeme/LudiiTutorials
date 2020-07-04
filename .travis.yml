@@ -5,6 +5,7 @@ branches:
   only:
   - master
   - setup-travis-ci
+  - update-0.9.4
   
 before_script:
   - sudo apt-get install ant-optional

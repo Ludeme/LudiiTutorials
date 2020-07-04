@@ -8,7 +8,7 @@
     (equipment 
         { 
             (board (square 10)) 
-            (piece "Queen" Each (slide (then (moveAgain))))
+            (piece "Queen" Each (move Slide (then (moveAgain))))
             (piece "Dot" Neutral)
         }
     )  
@@ -23,7 +23,7 @@
         (play 
             (if (is Even (count Moves))
                 (forEach Piece)
-                (shoot "Dot0")
+                (move Shoot (what "Dot0"))
             )
         )
         
@@ -39,8 +39,8 @@
 (metadata 
     (graphics 
         {
-            (pieceScale "Dot" 0.333)
-            (boardStyle ChessStyle)
+            (piece Scale "Dot" 0.333)
+            (board Style Chess)
         }
     )
 )

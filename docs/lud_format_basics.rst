@@ -45,18 +45,18 @@ As a first example, the following code shows the full game description for *Tic-
 .. code::
 
    (game "Tic-Tac-Toe"  
-       (players 2)  
-       (equipment 
-           { 
-               (board (square 3)) 
-               (piece "Disc" P1) 
-               (piece "Cross" P2) 
-           }
-       )  
-       (rules 
-           (play (add to:(sites Empty)))
-           (end (if (is Line 3) (result Mover Win)))
-       )
+      (players 2)  
+      (equipment 
+         { 
+            (board (square 3)) 
+            (piece "Disc" P1) 
+            (piece "Cross" P2) 
+         }
+      )  
+      (rules 
+         (play (move Add (to (sites Empty))))
+         (end (if (is Line 3) (result Mover Win)))
+      )
    )
    
 Viewing Ludii's Built-in Game Files

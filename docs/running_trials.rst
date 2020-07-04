@@ -70,10 +70,10 @@ random AIs), and inspects the rankings achieved at the end of every trial:
          model.startNewStep(context, ais, 1.0);
       }
       
-      final double[] ranking = trial.state().ranking();
+      final double[] ranking = trial.ranking();
       for (int p = 1; p <= game.players().count(); ++p)
       {
-         System.out.println("Agent " + trial.state().playerToAgent(p) + " achieved rank: " + ranking[p]);
+         System.out.println("Agent " + context.state().playerToAgent(p) + " achieved rank: " + ranking[p]);
       }
    }
    
@@ -120,4 +120,4 @@ After swapping, the "player indices" remain unchanged. This means that even afte
 swapping, Player 1 will still be red, and if the red player won, ``ranking[1]``
 will return ``1.0`` (for the first rank). However, *Player 1* will after a swap
 be controlled by *Agent 2*, and the correct index to use in arrays such as the
-``ranking`` array can be obtained using ``trial.state().playerToAgent(p)``.
+``ranking`` array can be obtained using ``context.state().playerToAgent(p)``.

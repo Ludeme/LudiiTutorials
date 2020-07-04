@@ -10,7 +10,7 @@ import java.util.List;
 import org.junit.Test;
 
 import game.Game;
-import player.utils.loading.GameLoader;
+import util.GameLoader;
 
 /**
  * Unit tests to make sure that our game loading code runs as expected for
