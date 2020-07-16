@@ -3,11 +3,6 @@
 Writing Amazons in .lud Format
 ==============================
 
-.. warning::
-   The current version of Ludii is a beta release. It is expected that some aspects of
-   the game description language will still change in ways that break backwards compatibility,
-   at least up until version 1.0.0.
-
 This tutorial provides a step-by-step walkthrough of how to implement the game
 *Amazons*, from scratch, in the ``.lud`` format. 
 
@@ -205,7 +200,7 @@ game description:
            (play 
                (if (is Even (count Moves))
                    (forEach Piece)
-                   (move Shoot (what "Dot0"))
+                   (move Shoot (piece "Dot0"))
                )
            )
            
@@ -229,7 +224,7 @@ This means that, after any queen move, the same player gets to make another move
 In lines 18-21, the ``play`` rules have been changed to no longer exclusively 
 extract their moves from the pieces. Only at even move counts (0, 2, 4, etc.) 
 do we still make a queen move (using ``(forEach Piece)``. At odd move counts, 
-the moves are defined by ``(move Shoot (what "Dot0"))``. This rule lets us 
+the moves are defined by ``(move Shoot (piece "Dot0"))``. This rule lets us 
 shoot a piece of type ``"Dot0"`` into any empty position, starting from the 
 location that we last moved to -- this is the location that our last queen move 
 ended up in. This game description implements the full game of *Amazons* for 
@@ -266,7 +261,7 @@ adding graphics metadata:
            (play 
                (if (is Even (count Moves))
                    (forEach Piece)
-                   (move Shoot (what "Dot0"))
+                   (move Shoot (piece "Dot0"))
                )
            )
            

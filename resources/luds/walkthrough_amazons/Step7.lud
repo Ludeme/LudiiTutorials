@@ -23,7 +23,7 @@
         (play 
             (if (is Even (count Moves))
                 (forEach Piece)
-                (move Shoot (what "Dot0"))
+                (move Shoot (piece "Dot0"))
             )
         )
         
