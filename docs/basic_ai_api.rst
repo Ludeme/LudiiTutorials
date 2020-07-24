@@ -1,12 +1,6 @@
 Basic API for AI Development
 ============================
 
-.. warning::
-
-   The API for AIs may still change in future Ludii versions, but will not
-   change substantially. AIs developed according to these guidelines should
-   have no trouble participating in the `Ludii AI Competition at CoG 2020 <https://github.com/Ludeme/LudiiAICompetition>`_.
-
 .. note::
 
    This tutorial expects AIs for Ludii to be implemented in Java. We are
@@ -18,8 +12,6 @@ Ludii expects custom AIs to be written in Java, and extend the abstract
 to be useful to override. AIs implemented according to this tutorial can be
 loaded and used to play games in the Ludii app the following 
 `instructions from the Ludii Example AI repository <https://github.com/Ludeme/LudiiExampleAI#loading-ai-in-the-ludii-application>`_.
-They can also be submitted as entries for the
-`Ludii AI Competition at CoG 2020 <https://github.com/Ludeme/LudiiAICompetition>`_.
 
 Selecting Actions
 -----------------
