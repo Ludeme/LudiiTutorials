@@ -1,11 +1,6 @@
 Writing .lud Descriptions -- Basics
 ===================================
 
-.. warning::
-   The current version of Ludii is a beta release. It is expected that some aspects of
-   the game description language will still change in ways that break backwards compatibility,
-   at least up until version 1.0.0.
-   
 The .lud Format
 ---------------
 
