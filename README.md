@@ -36,7 +36,8 @@ The following `.bib` entry may be used for citing the use of Ludii in papers::
             year        = "2020",
             editor      = "G. De Giacomo and A. Catala and B. Dilkina and M. Milano and S. Barro and A. Bugarín and J. Lang",
             series      = "Frontiers in Artificial Intelligence and Applications",
-            volume      = "325"
+            volume      = "325",
+	    publisher	= "IOS Press"
     }
 
 ## Acknowledgements
