@@ -3,9 +3,9 @@ Basic API for AI Development
 
 .. note::
 
-   This tutorial expects AIs for Ludii to be implemented in Java. We are
-   interested in supporting other languages, but do not have an explicit
-   timeline for when this will be supported.
+   This tutorial expects AIs for Ludii to be implemented in Java. For
+   experimental support for Python-based implementations, see
+   https://github.com/Ludeme/LudiiPythonAI.
 
 Ludii expects custom AIs to be written in Java, and extend the abstract
 ``util.AI`` class. This tutorial describes the basic functions that are likely
