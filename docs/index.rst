@@ -58,10 +58,14 @@ Citing Ludii
 
 The following ``.bib`` entry may be used for citing the use of Ludii in papers::
 
-    @inproceedings{Piette2020Ludii,
-      Author = {{\'E}. Piette and D. J. N. J. Soemers and M. Stephenson and C. F. Sironi and M. H. M. Winands and C. Browne},
-      Title = {Ludii - The Ludemic General Game System},
-      Year = {2020},
-      booktitle = {Proceedings of the 2020 European Conference on Artificial Intelligence},
-      note = {To appear.}
+	@inproceedings{Piette2020Ludii,
+      author = "{\'E}. Piette and D. J. N. J. Soemers and M. Stephenson and C. F. Sironi and M. H. M. Winands and C. Browne",
+      booktitle = "Proceedings of the 24th European Conference on Artificial Intelligence (ECAI 2020)",
+      title = "Ludii -- The Ludemic General Game System",
+      pages = "411-418",
+      year = "2020",
+      editor = "G. De Giacomo and A. Catala and B. Dilkina and M. Milano and S. Barro and A. Bugarín and J. Lang",
+      series = "Frontiers in Artificial Intelligence and Applications",
+      volume = "325",
+      publisher	= "IOS Press"
     }
