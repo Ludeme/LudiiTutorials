@@ -1,6 +1,13 @@
 Installing the Ludii Tutorials Repository
 =========================================
 
+.. note::
+
+   Following these instructions for installing the Ludii Tutorials Repository
+   is only required if you are interested in running some of the code examples
+   from various programming tutorials. This is irrelevant for non-programming 
+   use cases of Ludii, such as game design.
+
 The `Ludii Tutorials repository <https://github.com/Ludeme/LudiiTutorials>`_ on
 GitHub provides various code examples to go along with some of the tutorials on
 these pages. This page lists the steps required to run these code examples locally:
@@ -18,3 +25,7 @@ these pages. This page lists the steps required to run these code examples local
 5. Also set the project to use the other two ``.jar`` files that are already
    included in ``<install_dir>/LudiiTutorials/libs`` as libraries; these are
    only required for the unit tests in this repository.
+6. The code examples for various programming tutorials can all be found in
+   the ``<install_dir>/LudiiTutorials/src/ludii_tutorials`` package. Each
+   of these ``.java`` files has a main method, which means that it can be
+   run directly to see that tutorial's code in action.
