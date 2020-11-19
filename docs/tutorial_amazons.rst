@@ -231,12 +231,8 @@ ended up in. This game description implements the full game of *Amazons* for
 Ludii.
 
 Once pieces are defined, their names are internally appended with the index of the owning player. 
-For example, a "Queen" piece is defined for the players 1 and 2, hence the following game 
-description can refer to "Queen1" for "Queen" pieces belonging to Player 1 and "Queen2" for "Queen" pieces belonging to Player 2. 
-Note that the "Dot" piece is referred to as "Dot0", indicating that this is a neutral piece not 
-owned by any player. 
-Note that pieces can also be referred to by their undecorated names in the game description, 
-in which case the reference applies to all pieces with that name belonging to any player.
+For example, the above description defines a "Queen" piece for players 1 and 2, then the subsequent description refers to "Queen1" for "Queen" pieces belonging to Player 1 and "Queen2" for "Queen" pieces belonging to Player 2. The "Dot" piece is referred to as "Dot0", indicating that this is a neutral piece not owned by any player. 
+Note that pieces can also be referred to by their undecorated names in the game description, e.g. "Queen" or "Dot", in which case the reference applies to all pieces with that name belonging to any player.
 
 Step 7: Improving Graphics
 --------------------------
