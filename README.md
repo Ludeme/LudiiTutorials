@@ -18,7 +18,7 @@ All of the tutorials may be viewed on [ReadTheDocs](https://ludiitutorials.readt
 ## Other Useful Links
 
 - The [main Ludii Games page](https://ludii.games/).
-- The [Ludii Downloads page](https://ludii.games/downloads.php).
+- The [Ludii Downloads page](https://ludii.games/download.php).
 - The [Ludii User Guide](https://ludii.games/downloads/LudiiUserGuide.pdf).
 - The [Ludii Language Reference](https://ludii.games/downloads/LudiiLanguageReference.pdf).
 - The [main Digital Ludeme Project page](http://www.ludeme.eu/).
