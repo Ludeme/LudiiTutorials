@@ -53,8 +53,6 @@ public class TestGameLoading
 		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step3.lud")));
 		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step4.lud")));
 		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step5.lud")));
-		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step6.lud")));
-		assertNotNull(GameLoader.loadGameFromFile(new File("resources/luds/walkthrough_amazons/Step7.lud")));
 	}
 
 }

@@ -1,7 +1,6 @@
 // Step 3 in the tutorial for writing Amazons in .lud format from scratch
 //
-// In this file, the pieces placed by the players look like Queens, but otherwise
-// the game is still played like Tic-Tac-Toe on a 10x10 board.
+// In this file we introduce the start rules to place the initial pieces on the board.
 
 (game "Amazons"  
     (players 2)  
@@ -11,5 +10,23 @@
             (piece "Queen" Each)
             (piece "Dot" Neutral)
         }
-    )  
+    )
+    (rules
+        (start 
+            { 
+                (place "Queen1" {"A4" "D1" "G1" "J4"})
+                (place "Queen2" {"A7" "D10" "G10" "J7"})
+            }
+        )
+        (play 
+            (forEach Piece)
+        )
+        
+        (end 
+            (if 
+                (no Moves Next)  
+                (result Mover Win) 
+            ) 
+        ) 
+    )
 )
