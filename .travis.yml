@@ -13,3 +13,8 @@ before_script:
 script:
   - ./travis/download_ludii.sh
   - travis_wait ant clean test
+  
+notifications:
+  email:
+    recipients:
+      - d.soemers@gmail.com
