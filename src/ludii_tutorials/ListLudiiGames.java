@@ -12,7 +12,7 @@ import main.CommandLineArgParse;
 import main.CommandLineArgParse.ArgOption;
 import main.CommandLineArgParse.OptionTypes;
 import main.FileHandling;
-import util.GameLoader;
+import other.GameLoader;
 
 /**
  * Example class which lists built-in Ludii games (optionally only ones

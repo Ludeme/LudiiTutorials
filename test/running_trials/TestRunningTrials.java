@@ -9,11 +9,11 @@ import java.util.List;
 import org.junit.Test;
 
 import game.Game;
-import util.AI;
-import util.Context;
-import util.GameLoader;
-import util.Trial;
-import util.model.Model;
+import other.AI;
+import other.GameLoader;
+import other.context.Context;
+import other.model.Model;
+import other.trial.Trial;
 import utils.RandomAI;
 
 /**

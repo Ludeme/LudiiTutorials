@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import game.Game;
-import util.GameLoader;
+import other.GameLoader;
 
 /**
  * Example class showing how we can load games.
