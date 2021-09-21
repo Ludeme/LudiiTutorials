@@ -95,20 +95,20 @@ In this step, we add the pieces to the equipment.
        )
    )
    
-Line 6 defines that each player should have a piece type labelled ``Queen''. 
+Line 6 defines that each player should have a piece type labelled ``"Queen"``. 
 Ludii will automatically label these as ``"Queen1"`` and ``"Queen2"`` for players 
 1 and 2, respectively. Additionally, in line 7 we define a ``Dot'' piece type, 
 which is not owned by any player. This is the piece type that we will use in 
 locations that players block by shooting their arrows.
 
 Step 3: Defining the Starting Rules
----------------------------
+-----------------------------------
 
 We extend the game description listed above by adding ``start`` rules to place the pieces on the board:
 
 .. code-block:: python
    :linenos:
-   :emphasize-lines: 11-16,
+   :emphasize-lines: 11-16
    
    (game "Amazons"  
        (players 2)  
@@ -145,7 +145,7 @@ used to specify these locations can be seen in Ludii by enabling
 "Show Coordinates" in Ludii's *View* menu.
 
 Step 4: Step 4: Adding the Final Rules for *Amazons*
----------------------------------------------
+----------------------------------------------------
 
 To complete the game of *Amazons*, we need to allow players to move 
 their queens and to shoot an arrow after moving a queen. This is implemented 
