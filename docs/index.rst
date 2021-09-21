@@ -31,6 +31,7 @@ Artificial Intelligence in Ludii, running games for game evaluation or other pur
    ludii_terminology
    loading_games
    running_trials
+   cheat_sheet
    
 .. inspecting_trials_and_states
   
