@@ -8,7 +8,7 @@ This page provides a cheat sheet of methods in Ludii that programmatic users
 you will at least have access to a ``context`` object of the type ``Context``.
 Such an object is typically passed around as a wrapper around the 
 "current game state", or can be instantiated by yourself as described on the
-:ref:`loading_games_tutorial` page.
+:ref:`running_trials` page.
 
 By convention, we describe methods that should be called on ``Context`` objects
 as ``context.method()``, methods that should be called on ``Game`` objects as
