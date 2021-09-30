@@ -26,7 +26,7 @@ Game methods
 	Resets given ``Context`` object and starts it (applying any start rules to generate
 	an initial game state).
 	
-``game.moves(final Context context)``
+``game.moves(final Context context).moves()``
 	Returns the list of legal moves for the current game state in the given ``Context``
 	object. 
 	
